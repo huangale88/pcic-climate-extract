@@ -1,0 +1,15 @@
+name: pcic-climate
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - xarray
+  - netcdf4
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scipy
+  - openpyxl
+  - jupyterlab
+  - pyyaml
