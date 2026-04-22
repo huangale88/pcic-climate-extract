@@ -15,8 +15,7 @@ venv/
 *.lock
 
 # Data outputs (keep raw & processed structure, ignore contents if needed)
-data/interim/*
-data/processed/*
+data/*
 outputs/*
 
 # Excel temp files
