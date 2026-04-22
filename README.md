@@ -19,7 +19,7 @@ The primary objective of this repository is to generate **site-specific monthly 
 ## Repository Structure
 
 ```text
-mine-water-balance-climate/
+pcic-climate-extract/
 │
 ├── README.md
 ├── environment.yml
@@ -59,6 +59,7 @@ mine-water-balance-climate/
 │
 └── docs/
     └── methodology_notes.md
+```
 
 ## Folder and File Descriptions
 
@@ -124,4 +125,4 @@ A Conda environment is recommended for reproducibility. Create the environment u
 
 ```bash
 conda env create -f environment.yml
-conda activate mine-climate
+conda activate pcic-climate
