@@ -1,0 +1,10 @@
+raw_data:
+  pcic_precip: data/raw/pr_day_PCIC_Blended_Observations_v1_1950-2012.nc.nc
+  station_precip: data/raw/climate-daily-combined.csv
+
+interim_data:
+  site_daily_precip: data/interim/site_daily_precip.csv
+
+processed_data:
+  monthly_stats: data/processed/monthly_precip_stats.csv
+  excel_inputs: data/processed/excel_inputs/
