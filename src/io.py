@@ -45,3 +45,20 @@ def load_station_csv(relative_path):
     """
     path = _resolve_path(relative_path)
     return pd.read_csv(path)
+
+
+def _resolve_input_path(relative_path):
+    path = PROJECT_ROOT / relative_path
+    if not path.exists():
+        raise FileNotFoundError(f"Input file not found: {path}")
+    return path
+
+def resolve_output_path(relative_path, create_dirs=True):
+    """
+    Resolve a config-relative OUTPUT path.
+    Parent directory must exist or will be created.
+    """
+    path = PROJECT_ROOT / relative_path
+    if create_dirs:
+        path.parent.mkdir(parents=True, exist_ok=True)
+    return path
